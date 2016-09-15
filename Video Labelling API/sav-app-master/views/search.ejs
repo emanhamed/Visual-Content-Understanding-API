@@ -1,0 +1,18 @@
+<div class="row well">
+  <h1>Search for <%= req.query.search %></h1>
+  <% for (var i=0; i<imagelist.length; i++) { %>
+    <div class="col-sm-6 col-md-4" style="min-height:500px">
+      <div class="thumbnail">
+        <img src="<%= imagelist[i].split('assets')[1] %>">
+        <div class="caption">
+          <h3><%= times[i] %></h3>
+          <ul>
+            <% for (var j=0; j<labels[i].length;j++) { %>
+              <li><%= labels[j] %></li>
+            <% } %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <% } %>
+</div>

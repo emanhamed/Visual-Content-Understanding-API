@@ -1,0 +1,12 @@
+<div class="container">
+<h1>Jobs</h1>
+<ul class="list-group">
+  <% if (data.length > 0) { %>
+    <% for (var i=0; i<data.length; i++) { %>
+      <a href="/job/<%= data[i].id %>" class="list-group-item <% if (data[i].status.indexOf('check results') != -1) { %>list-group-item-success <% } else { %>list-group-item-warning<% } %>"><%= data[i].status %> &nbsp; <span class="label label-primary"><%= data[i].type %></span><span class="badge pull-right"><%= data[i].name %></span></a>
+    <% } %>
+  <% } else { %>
+    <h4>No jobs to show, push tasks using the API</h4>
+  <% } %>
+</ul>
+</div>

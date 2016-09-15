@@ -1,0 +1,11 @@
+<div class="jumbotron col-md-10 col-md-offset-1">
+    <h1>Current Token</h1>
+    <% if (!token) { %>
+        <p>you don't have any tokens, please generate a new token</p>
+    <% } else { %>
+        <p><%= token %></p>
+    <% } %>
+    <form action="/token" method="post">
+        <input type="submit" class="btn btn-default" value="Generate Token" />
+    </form>
+</div>

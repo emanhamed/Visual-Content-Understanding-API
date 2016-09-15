@@ -1,0 +1,21 @@
+{
+  "name": "sav-app",
+  "description": "Somewhat Awesome Video",
+  "main": "app.js",
+  "authors": [
+    "omar"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
